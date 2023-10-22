@@ -10,13 +10,13 @@ public class loginpageobject {
 		PageFactory.initElements(driver, this);
 		
 	}
-	@FindBy(id="UserName")
+	@FindBy(xpath="//input[@placeholder='Username']")
 	public WebElement txtUserid;
 	
-	@FindBy(id="Password")
+	@FindBy(xpath="//input[@placeholder='Password']")
 	public WebElement txtPassword;
 	
-	@FindBy(id="btnLogin")
+	@FindBy(xpath="//input[@value='LOG IN']")
 	public WebElement Loginbtn;
 	
 	/*
